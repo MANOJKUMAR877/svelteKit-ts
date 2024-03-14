@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # svelteKit-ts
 =======
 # create-svelte
@@ -40,3 +41,8 @@ You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
 >>>>>>> 507a73f4d4be662b9c407e0ab1297f5914222a88
+=======
+# svelteKit-ts
+
+#please check the master branch
+>>>>>>> d73dac48eb9e00c87ca974bed71dcaf7a1d68ef3
