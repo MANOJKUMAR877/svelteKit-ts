@@ -1,6 +1,6 @@
 <script lang="ts">
 	import '../app.postcss';
-
+import {page} from '$app/stores'
 	// Highlight JS
 	import hljs from 'highlight.js/lib/core';
 	import 'highlight.js/styles/github-dark.css';
@@ -15,6 +15,7 @@
 	hljs.registerLanguage('javascript', javascript);
 	hljs.registerLanguage('typescript', typescript);
 	storeHighlightJs.set(hljs);
+ export let data;
 
 	// Floating UI for Popups
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
@@ -25,8 +26,9 @@
 <AppShell>
 	<svelte:fragment slot="header">
 		<AppBar>
-			<h3 class="text-left">Manojkumar</h3>
+			<h3 class="text-left">{data.username}</h3>
 		</AppBar>
 	</svelte:fragment>
+	<p>{$page.data.notification}</p>
 	<slot />
 </AppShell>
