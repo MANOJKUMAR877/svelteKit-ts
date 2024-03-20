@@ -29,6 +29,6 @@ import {page} from '$app/stores'
 			<h3 class="text-left">{data.username}</h3>
 		</AppBar>
 	</svelte:fragment>
-	<p>{$page.data.notification}</p>
+	<!-- <p>{$page.data.notification}</p> -->
 	<slot />
 </AppShell>

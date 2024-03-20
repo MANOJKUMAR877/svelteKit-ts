@@ -5,5 +5,7 @@
 </script>
 
 {#each products as value}
-	<div>{value.id}--{value.title}</div>
+	<div>
+		<a data-sveltekit-preload-data="hover" href={`/products/${value.id}`}>{value.id}--{value.title}</a>
+	</div>
 {/each}
