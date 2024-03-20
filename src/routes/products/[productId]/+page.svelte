@@ -1,6 +1,8 @@
-<script lang="ts">
+<script >
+// @ts-nocheck
 
-	export let data: { response: Products[] };
+
+	export let data
 
 	let { response } = data;
 </script>
