@@ -23,8 +23,9 @@ export let form;
 
 <p>{form?.message||""}</p>
 <!-- //on:submit|preventDefault={HandleSubmit} -->
-<form  method="post">
+<form  method="post" action="?/login">
 	<input name="username" />
 	<input name="password" />
-	<button>Submit</button>
+	<button>Login</button>
+    <button formaction="?/register">Register</button>
 </form>
