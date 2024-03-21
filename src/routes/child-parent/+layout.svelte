@@ -1,5 +1,5 @@
 <script>
-	import Parent from './../../Components/Parent.svelte';
-
+    let manoj="mas"
 </script>
-<Parent/>
+
+<slot >{manoj}</slot>
