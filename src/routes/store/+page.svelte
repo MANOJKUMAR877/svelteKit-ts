@@ -10,3 +10,4 @@
 		<li>{item.text}</li>
 	{/each}
 </ul>
+<a href="/dummy">move</a>
