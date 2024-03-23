@@ -12,5 +12,5 @@
 
 <input bind:value={name} />
 
-<button on:click={addItem}>Add New Item</button>
+<button data-sveltekit-preload-data on:click={addItem}>Add New Item</button>
 <slot />

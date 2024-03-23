@@ -1,4 +1,5 @@
 <script>
+	// @ts-ignore
 	export let data;
 
 	const array1 = [
@@ -21,7 +22,17 @@
 		{ id: 4, age: 40 },
 		{ id: 5, age: 45 }
 	];
+	const array3 = [
+		{ id: 1, age: 25, com: true },
+		{ id: 2, age: 30, com: true },
+		{ id: 3, age: 35, com: false },
+		{ id: 4, age: 40, com: true },
+		{ id: 5, age: 45, com: true }
+	];
 
+	const newArray = array3.map((item) => ({ ...item, com: !item.com ,n:45}));
+
+	console.log(newArray)
 	// const mergedArray = array1.map((item1) => {
 	// 	const item2 = array2.find((item) => item.id === item1.id);
 	// 	if (item2) {
@@ -33,8 +44,10 @@
 	// const d = array2.filter((r, index) => r.id === array1[index].id);
 	//console.log(d);
 
+	// @ts-ignore
 	const rs = [...array1, ...array2];
 
+	// @ts-ignore
 	const arrayLength = array1.length < array2.length ? array1 : array2;
 	//console.log(arrayLength);
 
@@ -85,6 +98,7 @@
 	//filter pass the condtion
 
 	let value = data.todos.slice(0, 5);
+	// @ts-ignore
 	let value1 = data.todos.slice(17, 24);
 
 	//console.log(value1);
